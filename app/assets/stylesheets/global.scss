@@ -1,0 +1,37 @@
+html{
+
+  --primary_background:black;
+  --primary_text_color:#f5f5f5;
+
+  --secundary_background:#f4364f;
+  --complementary_background: #147AA8;
+  //COlor Imagenes #FF566D
+  --secundary_text_color:#874fee;
+  //Color imagenes:#B895F7
+
+}
+
+//    font-family: 'Nunito', sans-serif;
+//    font-family: 'Hind', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;700&family=Nunito:wght@200;600&display=swap');
+
+h1,h2,h3,h4{
+  font-family: 'Hind', sans-serif;
+}
+
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 2.6rem;
+}
+h3{
+  font-size: 2.3rem;
+}
+h4{
+  font-size: 2rem;
+}
+p,a{
+  font-size: 1.3rem;
+  font-family: 'Nunito', sans-serif;
+}

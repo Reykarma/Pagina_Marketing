@@ -1,0 +1,125 @@
+%section#main_banner.row.m-0.container-fluid.vh-100.d-flex.align-items-center.justify-content-center
+  .col-4.d-flex.flex-column
+    %h1="Es el momento de saltar al siguiente nivel !!"
+    %p="Ofrecemos servicio de desarrollo web y Gestion de redes sociales, no pieradas la oportunidad de darle a tu negocio mayor alcance con nuestros servicios."
+    %span="Contactanos, ofrecemos asesoria GRATUITA!"
+  
+  .col-6
+    -#=inline_svg_tag("home/cover_index", class:"w-100")
+    =image_tag asset_path("home/cover_index2"),class:"w-100"
+  .col-12.text-center
+    =link_to "#",class:"view_more" do
+      %h5.m-0="Ver mas"
+      =fa_icon "caret-down"
+
+      
+%section#services_container.row.container-fluid.justify-content-center.py-5.m-0
+  .col-11.row.d-flex.align-items-center
+    .col-3
+      %h2=" Lorem ipsum dolor sit "
+      %p=" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quis obcaecati laboriosam velit illo quas incidunt dolorum, voluptates perferendis pariatur, blanditiis quos voluptatum"
+      =link_to "#" do
+        %p.font-weight-bold.check-services="Revisa nuestros servicios"
+
+    .col-9.description_services
+      %div.p-1.box_img_services
+        .d-flex.align-items-center.text_service.text-center.w-100.h-100.p-5
+          %span
+            %h2="Desarrollo Web"
+            %p.p5="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae suscipit maxime architecto deleniti veritatis."
+        
+        =image_tag asset_path("home/services/web-developer"),class:" rounded img_services"
+      
+      %div.p-1.box_img_services
+        .d-flex.align-items-center.text_service.text-center.w-100.h-100.p-5
+          %span
+            %h2="Marketing Digital"
+            %p.p5="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae suscipit maxime architecto deleniti veritatis."
+        
+        =image_tag asset_path("home/services/marketing"),class:" rounded img_services"
+      
+      %div.p-1.box_img_services
+        .d-flex.align-items-center.text_service.text-center.w-100.h-100.p-5
+          %span
+            %h2="Programacion Backend"
+            %p.p5="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae suscipit maxime architecto deleniti veritatis."
+        
+        =image_tag asset_path("home/services/servers"),class:" rounded img_services"
+      
+      %div.p-1.box_img_services
+        .d-flex.align-items-center.text_service.text-center.w-100.h-100.p-5
+          %span
+            %h2="Diseño de interfaces"
+            %p.p5="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae suscipit maxime architecto deleniti veritatis."
+        
+        =image_tag asset_path("home/services/consultoria"),class:" rounded img_services"
+%section#best_points.container-fluid.p-0.mt-4
+  .parallax-container.position-relative.align-items-center
+    .parallax-window{ "data-parallax"=>"scroll", "data-image-src" => "#{asset_path('home/parallax')}", "speed" => "1"}
+    .text-parallax.d-flex.position-absolute.w-100.h-100
+      %h3.align-self-center.w-100.text-center.font-weight-bold="Contamos Con Las Mejores Soluciones Para Ti!"
+  
+  .row.col-10.container.mx-auto.justify-content-around.mt-5
+    .col-6.text-center
+      =image_tag asset_path("home/contact"),class:" rounded img_services w-100"
+      =link_to "#" do
+        %p.font-weight-bold.text-contact="Contactanos ahora!!"
+    
+    .col-5
+      .row.d-flex.justify-content-end.my-3.py-3
+        .col-4
+          =image_tag asset_path("home/best-points/fast-work"),class:" rounded img_services w-100"
+        .col-8
+          %h4="Metodologias rapidas"
+          %p=" Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero consequuntur fuga, architecto"
+
+      .row.d-flex.justify-content-end.my-3.py-3
+        .col-4
+          =image_tag asset_path("home/best-points/communication"),class:" rounded img_services w-100"
+        .col-8
+          %h4="Comunicacion constante"
+          %p=" Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero consequuntur fuga, architecto"
+
+      .row.d-flex.justify-content-end.my-3.py-3
+        .col-4
+          =image_tag asset_path("home/best-points/best-workers"),class:" rounded img_services w-100"
+        .col-8
+          %h4="Personal capacitado"
+          %p=" Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero consequuntur fuga, architecto"
+-#%section#blog.py-5.container-fluid
+  %h4.text-center.my-2.title-blog="Dale un vistazo a nuestro blog" 
+  .row.justify-content-center.mt-5
+    .col-10.row.row-cols-4.justify-content-around
+      .card.mx-2.shadow-sm
+        =image_tag asset_path("home/contact"),class:"card-img-top" 
+        .card-body
+          %h5.card-title="Title"
+          %p.card-text="Some quick example text to build on the card title and make up the bulk of the card's content."
+          =link_to"View More","#",class:"btn btn-primary"
+      
+      .card.mx-2.shadow-sm
+        =image_tag asset_path("home/contact"),class:"card-img-top" 
+        .card-body
+          %h5.card-title="Title"
+          %p.card-text="Some quick example text to build on the card title and make up the bulk of the card's content."
+          =link_to"View More","#",class:"btn btn-primary"
+
+      .card.mx-2.shadow-sm
+        =image_tag asset_path("home/contact"),class:"card-img-top" 
+        .card-body
+          %h5.card-title="Title"
+          %p.card-text="Some quick example text to build on the card title and make up the bulk of the card's content."
+          =link_to"View More","#",class:"btn btn-primary"
+
+%section#blog2.py-5
+  %h4.text-center.my-4.title-blog="Dale un vistazo a nuestro blog" 
+  .row.container-fluid.justify-content-center
+    .col-5.mx-1.card-blog.d-flex.justify-content-center
+      =image_tag "https://programaenlinea.net/wp-content/uploads/2019/12/C%C3%B3digo-Python.jpg",class:"h-100"
+
+    .col-5.mx-1.card-blog.d-flex.justify-content-center
+      =image_tag "https://c.wallhere.com/photos/6a/82/Linux_Penguin_stripes_operating_system_minimalism_digital_Retro_style-1867759.jpg!d",class:"h-100"
+
+
+
+

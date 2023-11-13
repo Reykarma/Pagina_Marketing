@@ -1,0 +1,103 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+//************************INDEX*********************************
+#main_banner{
+  p{
+    font-size: 1.3rem;
+  }
+  span{
+    font-weight: bold;
+    color:var(--secundary_text_color)
+  }
+  .view_more{
+    color: var(--secundary_text_color);
+    text-decoration: none; 
+    h5{
+    font-weight: bold;
+    }
+  }
+}
+
+#services_container{
+  .check-services{
+    color:#f4364f ;
+  }
+  .description_services{
+		display:flex;
+		height:50vh;
+
+		.box_img_services{
+      position: relative;
+			flex:1;
+			overflow:hidden;
+			transition: 0.3s ease 0s;
+			.img_services{
+				object-fit:cover;
+				width: 100%;
+  			height: 100%;
+  			transition: 0.3s ease 0s;;
+      }
+      .text_service{
+        color:white;
+        position: absolute;
+        opacity: 0;
+        transition: 0.1s ease-in;
+      }
+    }
+    .box_img_services:hover{
+      flex: 1 1 50%;
+      .img_services{
+        box-shadow: 3px 3px 15px 0px gray;
+        width:100%;
+        height:100%;
+      }
+      .text_service{
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 1;
+        transition: 0.3s ease-in;
+      }
+    }
+  }
+}
+#best_points{
+  .text-contact{
+    color: #f4364f;
+  }
+  .parallax-container{
+    .parallax-window {
+      min-height: 400px;
+      background: transparent;
+    }
+    .text-parallax{
+      top:0;
+      color: var(--primary_text_color);
+    }
+  }
+}
+
+#blog{
+  .title-blog{
+    font-weight: bold;
+  }
+  background-color: white;
+}
+
+#blog2{
+  .title-blog{
+    font-weight: bold;
+  }
+  .card-blog{
+    height:450px;
+    overflow: hidden;
+  }
+}
+//************************ FIN INDEX*********************************
+
+
+//************************Servicios*****************************
+
+
+
+//************************ FIN Servicios*********************************

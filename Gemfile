@@ -17,6 +17,18 @@ gem 'sass-rails', '>= 6'
 gem 'jbuilder', '~> 2.7'
 gem 'hamlit' # Vistas en Haml
 gem 'haml-rails' # Complemento para generar views en haml
+
+gem 'autoprefixer-rails'
+gem 'jquery-rails'
+gem 'bootstrap', '4.5.3'
+
+#libreria para imagenes svg
+gem 'inline_svg'
+
+#Iconos
+gem "font-awesome-rails"
+
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password

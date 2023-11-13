@@ -1,0 +1,23 @@
+header{
+  height: 95px;
+  nav{
+    &#main_nav{
+      background-color:white ;
+    }
+    .logo{
+      max-width: 80px;
+    }
+    .menu{
+      .nav-item{
+        border-radius: 5px;
+        .nav-link{
+          font-weight: bold;
+          color:black;
+          &:hover{
+          color:var(--secundary_text_color);
+          }
+        }
+      }
+    }
+  }
+}
